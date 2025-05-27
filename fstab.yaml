@@ -1,0 +1,7 @@
+mountpoints:
+  /:
+    url: https://adobe.sharepoint.com/:f:/r/sites/EDS-Projects/Shared%20Documents/sites/storefront?csf=1&web=1&e=32bTCN
+    type: markup
+
+folders:
+  /products/: /products/default
