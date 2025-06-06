@@ -1,10 +1,12 @@
 .carousel .carousel-slides-container {
   position: relative;
 }
+
 .carousel-wrapper {
   margin: 0;
   padding: 0;
 }
+
 .carousel .carousel-slides,
 .carousel .carousel-slide-indicators {
   list-style: none;
@@ -70,6 +72,23 @@
   }
 }
 
+.carousel .carousel-slide-indicator button {
+  cursor: pointer;
+  width: 40px;
+  height: 7px;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(247 247 247 / 30%);
+  transition: background-color 0.2s;
+  border: none;
+}
+
+.carousel .carousel-slide-indicator button:disabled,
+.carousel .carousel-slide-indicator button:hover,
+.carousel .carousel-slide-indicator button:focus-visible {
+  background-color: var(--background-color);
+}
+
 .carousel .carousel-slide .carousel-slide-content p:nth-child(2) {
   button {
     font-size: 1.7rem;
@@ -93,25 +112,7 @@
   line-height: 0;
 }
 
-.carousel .carousel-slide-indicator button {
-  cursor: pointer;
-  width: 40px;
-  height: 7px;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(247, 247, 247, 0.3);
-  transition: background-color 0.2s;
-  border: none;
-}
-
-.carousel .carousel-slide-indicator button:disabled,
-.carousel .carousel-slide-indicator button:hover,
-.carousel .carousel-slide-indicator button:focus-visible {
-  background-color: var(--background-color);
-}
-
 .carousel .carousel-navigation-buttons {
-  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -123,9 +124,7 @@
   z-index: 1;
 }
 
-/* stylelint-disable-next-line no-descending-specificity */
 .carousel .carousel-navigation-buttons button {
-  display: none;
   position: relative;
   width: 44px;
   height: 44px;

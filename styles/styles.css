@@ -397,11 +397,6 @@ main > .section:first-of-type {
   margin-top: 0;
 }
 
-@media (width >= 900px) {
-  main > .section > div {
-  }
-}
-
 /* section metadata */
 main .section.light,
 main .section.highlight {

@@ -4,9 +4,11 @@
     align-items: center     ;
     background: #eee;
     padding: 50px 10vw;
+
     div {
         flex: 1;
     }
+
     .band-content-tiles {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -23,8 +25,10 @@
         p:first-child {
             height: 100%;
             width: 100%;
+
             picture {
                 height: 100%;
+
                 img {
                     height: 100%;
                     object-fit: cover;
@@ -32,7 +36,7 @@
                 }
             }
         }
-        
+
         p:last-child {
             color: white;
             font-size: 20px;
@@ -50,6 +54,7 @@
     .band-content-text {
         > div {
             position: relative;
+
             h2 {
                 font-weight: 700;
                 line-height: 1;
@@ -67,6 +72,7 @@
                     height: 5px;
                 }
             }
+
             & p:last-child {
                 background-color: green;
                 color: white;
