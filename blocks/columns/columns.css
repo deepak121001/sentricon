@@ -1,3 +1,13 @@
+.default-content-wrapper {
+  p, h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+  }
+}
+
+.columns-wrapper{
+
+  padding: 2rem;
+}
 .columns > div {
   display: flex;
   flex-direction: column;
@@ -23,6 +33,9 @@
   .columns > div {
     align-items: center;
     flex-direction: unset;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    min-height: 258px;
     gap: 24px;
   }
 

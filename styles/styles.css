@@ -389,9 +389,8 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
-  padding: 0 var(--spacing-medium);
 }
 
 main > .section:first-of-type {
@@ -400,7 +399,6 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
   main > .section > div {
-    padding: 0 var(--spacing-big);
   }
 }
 
