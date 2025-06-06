@@ -1,3 +1,4 @@
+/* eslint-disable */
 const formClassNames = ['image', 'title', 'options', 'description', 'details' ];
 const colorMap = {
     "Lalic": "ll",
