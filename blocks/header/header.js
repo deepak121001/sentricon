@@ -237,6 +237,12 @@ export default async function decorate(block) {
     cartButton.style.display = 'none';
   }
 
+  const cartWrapper = nav.querySelector('.nav-tools .nav-cart-button');
+  cartWrapper?.classList.add('cart-wrapper');
+  if (cartWrapper) {
+    cartWrapper.innerHTML = '<span class="cart-count">0</span>';
+  }
+
   // load nav as fragment
   const miniCartMeta = getMetadata('mini-cart');
   const miniCartPath = miniCartMeta ? new URL(miniCartMeta, window.location).pathname : '/mini-cart';

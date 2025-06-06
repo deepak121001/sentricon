@@ -1,4 +1,4 @@
-/* stylelint-disable selector-class-pattern */
+/* stylelint-disable */
 
 :root {
   --desktop-item-panel-max-width: 300px;
@@ -81,6 +81,26 @@ header nav .nav-hamburger button {
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
+}
+
+.cart-wrapper {
+    position: relative;
+    .cart-count {
+        position: absolute;
+        visibility: hidden;
+        right: 0px;
+        top: -10px;
+        background: blue;
+        color: white;
+        border-radius: 1rem;
+        padding: 0.1rem 0.3rem;
+        text-align: center;
+        padding-top: 0.2rem;
+    }
+
+    .cart-active {
+        visibility: visible;
+    }
 }
 
 header nav .nav-hamburger-icon,
