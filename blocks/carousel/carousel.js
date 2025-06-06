@@ -76,7 +76,6 @@ function createSlide(row, slideIndex, carouselId) {
 
   row.querySelectorAll(':scope > div').forEach((column, colIdx) => {
     column.classList.add(`carousel-slide-${colIdx === 0 ? 'image' : 'content'}`);
-    
     // If this is the content column, process p tags
     if (colIdx !== 0 && column.classList.contains('carousel-slide-content')) {
       const pTags = column.querySelectorAll('p');
