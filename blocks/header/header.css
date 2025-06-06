@@ -83,6 +83,26 @@ header nav .nav-hamburger button {
   white-space: initial;
 }
 
+.cart-wrapper {
+    position: relative;
+    .cart-count {
+        position: absolute;
+        visibility: hidden;
+        right: 0px;
+        top: -10px;
+        background: blue;
+        color: white;
+        border-radius: 1rem;
+        padding: 0.1rem 0.3rem;
+        text-align: center;
+        padding-top: 0.2rem;
+    }
+
+    .cart-active {
+        visibility: visible;
+    }
+}
+
 header nav .nav-hamburger-icon,
 header nav .nav-hamburger-icon::before,
 header nav .nav-hamburger-icon::after {

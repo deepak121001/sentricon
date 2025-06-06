@@ -181,6 +181,8 @@ export default async function decorate(block) {
     if (section) section.classList.add(`nav-${c}`);
   });
 
+  
+
   const navBrand = nav.querySelector('.nav-brand');
   const brandLink = navBrand.querySelector('.button');
   if (brandLink) {
@@ -235,6 +237,12 @@ export default async function decorate(block) {
 
   if (excludeMiniCartFromPaths.includes(window.location.pathname)) {
     cartButton.style.display = 'none';
+  }
+
+  let cartWrapper = nav.querySelector('.nav-tools .nav-cart-button');
+  cartWrapper?.classList.add('cart-wrapper');
+  if (cartWrapper) {
+    cartWrapper.innerHTML = `<span class="cart-count">0</span>`;
   }
 
   // load nav as fragment
