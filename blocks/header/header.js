@@ -240,7 +240,7 @@ export default async function decorate(block) {
   const cartWrapper = nav.querySelector('.nav-tools .nav-cart-button');
   cartWrapper?.classList.add('cart-wrapper');
   if (cartWrapper) {
-    cartWrapper.innerHTML = `<span class='cart-count'>0</span>`;
+    cartWrapper.innerHTML = '<span class="cart-count">0</span>';
   }
 
   // load nav as fragment
